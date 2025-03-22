@@ -1,0 +1,109 @@
+.glow-container {
+    position: relative;
+    padding: 3rem;
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .glow-form-wrapper {
+    position: relative;
+    padding: 0.75rem;
+    overflow: hidden;
+    border-radius: 9999px;
+    z-index: 0;
+  }
+  
+  .glow-form {
+    position: relative;
+    display: flex;
+    z-index: 50;
+    background-color: rgb(21, 13, 13);
+    border-radius: 9999px;
+  }
+  
+  .glow-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+    color: #4b5563;
+    outline: none;
+  }
+  
+  .glow-button {
+    background-color: #1c1fcb;
+    color: rgb(197, 64, 64);
+    border-radius: 9999px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+  
+  .glow {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    border-radius: 100%;
+    filter: blur(4rem);
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    z-index: 10;
+  }
+  
+  .glow-1 {
+    background-color: #f472b6; /* Tailwind pink-400 */
+    animation: glow1 4s linear infinite;
+  }
+  
+  .glow-2 {
+    background-color: #818cf8; /* Tailwind indigo-400 */
+    animation: glow2 4s linear infinite;
+    animation-delay: 100ms;
+  }
+  
+  .glow-3 {
+    background-color: #f472b6; /* Tailwind pink-400 */
+    animation: glow3 4s linear infinite;
+    animation-delay: 200ms;
+  }
+  
+  .glow-4 {
+    background-color: #818cf8; /* Tailwind indigo-400 */
+    animation: glow4 4s linear infinite;
+    animation-delay: 300ms;
+  }
+  
+  @keyframes glow1 {
+    0% { transform: translate(10%, 10%) scale(1); }
+    25% { transform: translate(-10%, 10%) scale(1); }
+    50% { transform: translate(-10%, -10%) scale(1); }
+    75% { transform: translate(10%, -10%) scale(1); }
+    100% { transform: translate(10%, 10%) scale(1); }
+  }
+  
+  @keyframes glow2 {
+    0% { transform: translate(-10%, -10%) scale(1); }
+    25% { transform: translate(10%, -10%) scale(1); }
+    50% { transform: translate(10%, 10%) scale(1); }
+    75% { transform: translate(-10%, 10%) scale(1); }
+    100% { transform: translate(-10%, -10%) scale(1); }
+  }
+  
+  @keyframes glow3 {
+    0% { transform: translate(-10%, 10%) scale(1); }
+    25% { transform: translate(-10%, -10%) scale(1); }
+    50% { transform: translate(10%, -10%) scale(1); }
+    75% { transform: translate(10%, 10%) scale(1); }
+    100% { transform: translate(-10%, 10%) scale(1); }
+  }
+  
+  @keyframes glow4 {
+    0% { transform: translate(10%, -10%) scale(1); }
+    25% { transform: translate(10%, 10%) scale(1); }
+    50% { transform: translate(-10%, 10%) scale(1); }
+    75% { transform: translate(-10%, -10%) scale(1); }
+    100% { transform: translate(10%, -10%) scale(1); }
+  }
+  
