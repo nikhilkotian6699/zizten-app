@@ -6,7 +6,7 @@ const GlowingSearch = () => {
         <div className=" flex flex-col justify-center">
         <div className="relative p-12  sm:max-w-2xl sm:mx-auto">
             <div  className="overflow-hidden z-0 rounded relative p-3">
-            <form role="form" className="relative flex z-50  rounded-full">
+            <form role="form" className="relative flex z-50 bg-white  rounded-full">
                 
                 
                 <input
